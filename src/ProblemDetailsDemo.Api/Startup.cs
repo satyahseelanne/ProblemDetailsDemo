@@ -39,6 +39,7 @@ namespace ProblemDetailsDemo.Api
                     // optional tweaks to built-in mvc non-success http responses
                     o.Conventions.Add(new NotFoundResultApiConvention());
                     o.Conventions.Add(new ProblemDetailsResultApiConvention());
+                    o.EnableEndpointRouting = false;
                 })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
